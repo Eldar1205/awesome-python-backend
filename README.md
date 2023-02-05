@@ -3,7 +3,7 @@
 
 This document is an index for online reading materials in order to learn Python and backend development/engineering concepts from scratch and develop a mastery sufficient for Senior/Principal Backend Engineers and Data Engineers.
 
-For contributions/proposals/discussion please refer to [CONTRIBUTING](CONTRIBUTING.md), you may also contact me on [LinkedIn](https://www.linkedin.com/in/eldar-sehayek/).
+If you have any question/proposal or want to discuss this index, do not hesitate to contact me on [LinkedIn](https://www.linkedin.com/in/eldar-sehayek/) or open an issue on GitHub.
 
 <br>
 
@@ -17,6 +17,7 @@ For contributions/proposals/discussion please refer to [CONTRIBUTING](CONTRIBUTI
 	  * [Tips and Tricks](#tips-and-tricks)
 	  * [Documentation](#documentation)
 	  * [Distributed Programming Frameworks](#distributed-programming-frameworks)
+  - **[Contribution](#contribution)**
 <br>
 
 ## Environment setup and installations
@@ -402,3 +403,9 @@ Features:
 	13. **Alpha quality Windows support** , can try to run on WSL if there are issues
 * _Ray_ actors are heavyweight processes, unlike _Orleans_ (.Net) and _Akka_ (Java/Scala).
 * Python has a lightweight actors framework [_Thespian_](https://thespianpy.com/doc/#outline-container-org45f5f68), much less popular than above.
+
+## Contribution
+
+Your contributions and proposals are always welcome! Please refer to the [contribution guidelines](CONTRIBUTING.md) first.
+
+I may keep some pull requests open until I look into the references myself, you could [vote for them](https://github.com/Eldar1205/awesome-python-backend/pulls) by adding :+1: to them.
