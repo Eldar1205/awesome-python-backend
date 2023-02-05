@@ -146,7 +146,7 @@ DISCLAIMER: All below async references were added taking into consideration only
 9. <u>Json</u> - fast library for working with JSON, supports dataclasses serialization - [_orjson_](https://github.com/ijl/orjson)
 10. <u>Data Models</u> - represent system entities as typed data models designed for static type checks - [_pydantic_](https://pydantic-docs.helpmanual.io/):
 	1. Data models validations support. including support for built-in Python types as well as additional _pydantic_ useful types mentioned in b) and c) and simple support for custom data validations for many scenarios
-	2. Provides several QoL value objects to use as fields of data models, most useful IMO: **HttpUrl** , **EmailStr** , **Json[T], SecretStr (a string hidden from logs)**
+	2. Provides several QoL value objects to use as fields of data models, most useful IMO: **HttpUrl**, **EmailStr**, **Json[T]**, **SecretStr** (a string hidden from logs)
 	3. Provides constrained types such that values follow some restrictions like strings/lists of certain length, most useful IMO: **constr, conint, PositiveInt, conlist, conset**
 	4. Supports reusable models configurations via inheritance from custom **BaseModel** and reusable validations using **validator** helper
 	5. Data models JSON support - serialization and deserialization, including support for 3rd party JSON libraries e.g. [_orjson_](https://pydantic-docs.helpmanual.io/usage/exporting_models/#custom-json-deserialisation)
