@@ -192,25 +192,25 @@ DISCLAIMER: All below async references were added taking into consideration only
 	2. There's also [_rodi_](https://github.com/Neoteroi/rodi) which is inspired by .Net built-in DI container, less features and less Github activity (commits/contributors/etc.) but simpler to use
 20. <u>CLI</u> - create applications with command-line interface - [_typer_](https://typer.tiangolo.com/)
 	1. Async main/command tip below "Sync to Async decorator"
-21. <u>Web frameworks</u> - build web services/applications that either provide HTML pages/components via Server Side Rendering (SSR) and templating, or RESTful HTTP APIs, or both. There are some popular alternatives:
+21. <u>Web frameworks</u> - build web services/applications that either provide HTML pages/components via Server Side Rendering (SSR) and templating, or RESTful HTTP APIs, or both. There are some popular alternatives, _FastAPI_ is the recommended one:
 	1. [_FastAPI_](https://fastapi.tiangolo.com/) - modern, specialized for type hints, supports explicit async IO and auto-generates Swagger UI (API spec)
-	2. [_Flask_](https://flask.palletsprojects.com/en/2.0.x/) _-_ exists since 2010, no explicit async IO support
-	 3. [_Django_](https://www.djangoproject.com/) - a very extensive framework with many many features, essentially an ecosystem, well documented, [limited explicit async IO support](https://docs.djangoproject.com/en/3.2/topics/async/)
+	2. [_Flask_](https://flask.palletsprojects.com/en/2.0.x/) - exists since 2010, no explicit async IO support
+	3. [_Django_](https://www.djangoproject.com/) - a very extensive framework with many many features, essentially an ecosystem, well documented, [limited explicit async IO support](https://docs.djangoproject.com/en/3.2/topics/async/)
 	 \* Comparisons exist online, _FastAPI_ is mostly preferred due to explicit async IO
 	 \*  Useful [web frameworks reference](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Web_frameworks) on how to evaluate them 
- 22. <u>Background tasks scheduling</u> - run background workers such that work can be scheduled (one-time or periodic):
+23. <u>Background tasks scheduling</u> - run background workers such that work can be scheduled (one-time or periodic):
 	 1. [_apscheduler_](https://github.com/agronholm/apscheduler) is a scheduler for a single worker with flexible jobs store choices
 	 2. [_arq_](https://arq-docs.helpmanual.io/#) is a lightweight distributed task queue built on top of [_Redis_](https://redis.io/) 
 	 * See [Distributed programming frameworks](#distributed-programming-frameworks) section for more complete and heavyweight solutions.
-22. <u>gRPC Client & Server</u> - communication using gRPC protocol which is more suited than RESTful HTTP for communication between services that are part of the same system since performance is better and describing contracts using RPC (remote procedure call) is simpler conceptually compared to RESTful HTTP contracts describing resources with URLS and verbs as actions - [Real Python reference](https://realpython.com/python-microservices-grpc/) & [Official Google docs reference](https://grpc.io/docs/languages/python/)
-23. <u>GraphQL</u> - data query language for web services - [_graphene_](https://graphene-python.org/)
-	1. [Integrates with](https://github.com/graphql-python/graphene-pydantic)[_pydantic_](https://github.com/graphql-python/graphene-pydantic)to query over _pydantic_ models
-	2. [Integrates with](https://github.com/ciscorn/starlette-graphene3)[_FastAPI_](https://github.com/ciscorn/starlette-graphene3) to expose GraphQL API, usually over _pydantic_ models
-	3. [Integrates with](https://towardsdatascience.com/graphql-with-python-flask-560d083ffa01)[_Flask_](https://towardsdatascience.com/graphql-with-python-flask-560d083ffa01) to expose GraphQL API over whatever data you choose
-	4. [Integrates with](https://docs.graphene-python.org/projects/django/en/latest/)[_Django_](https://docs.graphene-python.org/projects/django/en/latest/) to expose GraphQL API over _Django_ models
-24. <u>Event Sourcing</u> - represent persistent entities as changesets logs and incorporate pub-sub notifications for entities' changes to update representations of the entities in additional data stores, update search indexes, notify other systems, etc. - [_eventsourcing_](https://eventsourcing.readthedocs.io/en/v9.1.1/)
-25. <u>Reactive Extensions</u> - building asynchronous event-based programs using observable collections as a concept for working with streams of asynchronous data, useful approach for implementing custom data pipelines in your Python service - [_RxPY_](https://github.com/ReactiveX/RxPY)
-26. <u>Docker</u> - Docker containers are amazing for microservices and have become the de-facto standard for building & deploying them: [Docker official docs reference](https://docs.docker.com/)
+24. <u>gRPC Client & Server</u> - communication using gRPC protocol which is more suited than RESTful HTTP for communication between services that are part of the same system since performance is better and describing contracts using RPC (remote procedure call) is simpler conceptually compared to RESTful HTTP contracts describing resources with URLS and verbs as actions - [Real Python reference](https://realpython.com/python-microservices-grpc/) & [Official Google docs reference](https://grpc.io/docs/languages/python/)
+25. <u>GraphQL</u> - data query language for web services - [_graphene_](https://graphene-python.org/)
+	1. [Integrates with _pydantic_](https://github.com/graphql-python/graphene-pydantic) to query over _pydantic_ models
+	2. [Integrates with _FastAPI_](https://github.com/ciscorn/starlette-graphene3) to expose GraphQL API, usually over _pydantic_ models
+	3. [Integrates with _Flask_](https://towardsdatascience.com/graphql-with-python-flask-560d083ffa01) to expose GraphQL API over whatever data you choose
+	4. [Integrates with _Django_](https://docs.graphene-python.org/projects/django/en/latest/) to expose GraphQL API over _Django_ models
+26. <u>Event Sourcing</u> - represent persistent entities as changesets logs and incorporate pub-sub notifications for entities' changes to update representations of the entities in additional data stores, update search indexes, notify other systems, etc. - [_eventsourcing_](https://eventsourcing.readthedocs.io/en/v9.1.1/)
+27. <u>Reactive Extensions</u> - building asynchronous event-based programs using observable collections as a concept for working with streams of asynchronous data, useful approach for implementing custom data pipelines in your Python service - [_RxPY_](https://github.com/ReactiveX/RxPY)
+28. <u>Docker</u> - Docker containers are amazing for microservices and have become the de-facto standard for building & deploying them: [Docker official docs reference](https://docs.docker.com/)
 	1. [Docker with Python in VS Code reference](https://code.visualstudio.com/docs/containers/quickstart-python)
 	2. [Real Python Docker tutorials reference](https://realpython.com/tutorials/docker/)
 
