@@ -6,19 +6,19 @@ This document is an index for online reading materials in order to learn Python 
 If you wish to contribute a change, please create a feature branch from 'main' branch and submit a pull request.
 <br>
 
-  - **[Environment setup & installations](#environment-setup---installations)**
-  - **[General tutorials & guides](#general-tutorials---guides)**
+  - **[Environment setup and installations](#environment-setup-and-installations)**
+  - **[General tutorials and guides](#general-tutorials-and-guides)**
   - **[Important Standard Library Modules](#important-standard-library-modules)**
   - **[Topics Index](#topics-index)**
 	  * [QoL libraries](#qol-libraries)
 	  * [Unit Testing](#unit-testing)
 	  * [Code Quality and Linting](#code-quality-and-linting)
-	  * [Tips & Tricks](#tips---tricks)
+	  * [Tips and Tricks](#tips-and-tricks)
 	  * [Documentation](#documentation)
 	  * [Distributed Programming Frameworks](#distributed-programming-frameworks)
 <br>
 
-## Environment setup & installations
+## Environment setup and installations
 
 **First start by setting up a Python development environment - either interactive mode with**  ***Jupyter***  **-or- an IDE where you can write code and then execute once done.**
 
@@ -38,7 +38,6 @@ If you're using another version of Ubuntu (e.g. the latest LTS release) or you w
 `#You can specify the exact python version if needed`<br>
 To verify which version of Python 3 you have installed, open a command prompt and run:<br>
 `$ python3 --version`
-<br>
 2. Understand virtual environments: [Real Python reference](https://realpython.com/python-virtual-environments-a-primer/) & [Official docs reference](https://docs.python.org/3/tutorial/venv.html)
 3. [JupyterLab and Jupyter Notebook](https://jupyter.org/) are notebook style editors for Python where you can write code, save data, write free text explanations, etc.
 	1. [Windows] [Python & Jupyter Notebook Windows installation guide](https://medium.com/@kswalawage/install-python-and-jupyter-notebook-to-windows-10-64-bit-66db782e1d02)
@@ -47,7 +46,7 @@ To verify which version of Python 3 you have installed, open a command prompt an
 6. {Github credit: lironsoffer} [Google Colab](https://colab.research.google.com/) - online Python notebook style editor by Google. Provides access to free GPU.
 7. {Github credit: lironsoffer} [Dataspell](https://www.jetbrains.com/dataspell/) - a relatively new IDE from JetBrains which supports running notebooks cells (.ipynb files). Has features of traditional IDE as opposed to Jupyter Notebooks and JupyterLabs.
 
-## General tutorials & guides
+## General tutorials and guides
 
 **With a development environment ready you can now learn how to write Python code.**
 
@@ -297,7 +296,7 @@ Comprehensive useful Python libraries & frameworks index: [https://github.com/vi
 6. [VS Code _Black_ and _isort_](https://cereblanco.medium.com/setup-black-and-isort-in-vscode-514804590bf9)
 7. [Github action for Python Code Quality and Linting](https://github.com/marketplace/actions/python-code-quality-and-lint)
 
-### Tips & Tricks
+### Tips and Tricks
 
 **Some useful tips & tricks that can't be classified as some stand-alone topic.**
 
