@@ -1,5 +1,5 @@
 
-# Python Learning for Backend/Data Engineers from zero to hero
+# Python Learning for Backend Engineers from Zero to Hero
 
 This document is an index for online reading materials in order to learn Python and backend development/engineering concepts from scratch and develop a mastery sufficient for Senior/Principal Backend Engineers and Data Engineers.
 
