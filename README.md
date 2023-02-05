@@ -36,7 +36,7 @@ If you're using another version of Ubuntu (e.g. the latest LTS release) or you w
 `$ sudo add-apt-repository ppa:deadsnakes/ppa`
 `$ sudo apt-get update`<br>
 `$ sudo apt-get install python3.10`<br>
-`#You can specify the exact python version if needed`<br>
+You can specify the exact python version if needed.<br>
 To verify which version of Python 3 you have installed, open a command prompt and run:<br>
 `$ python3 --version`
 2. Understand virtual environments: [Real Python reference](https://realpython.com/python-virtual-environments-a-primer/) & [Official docs reference](https://docs.python.org/3/tutorial/venv.html)
