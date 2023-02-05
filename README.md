@@ -27,7 +27,7 @@ _Tip:_ if you work on a personal PC not meant solely for development purposes yo
 1. Python Installation
 	1. [Windows] [Python installation](https://www.python.org/downloads/) - for Windows make sure to have both Python and its scripts in your PATH environment variables, they'll be in your Python installation directory, example:
 	[![image](https://www.linkpicture.com/q/pythoninstall.png)](https://www.linkpicture.com/view.php?img=LPic63e011b7d882d1226923044)
-	 2. [Linux] {Github credit: m3et} If you are using Ubuntu 16.10 or newer, then you can easily install Python 3.10 with the following commands:<br>
+	 2. (Contributed by [m3et](https://github.com/m3et)) [Linux] If you are using Ubuntu 16.10 or newer, then you can easily install Python 3.10 with the following commands:<br>
 `$ sudo apt-get update`
 `$ sudo apt-get install python3.10` <br>
 If you're using another version of Ubuntu (e.g. the latest LTS release) or you want to use a more current Python, we recommend to use the [deadsnakes PPA](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa) to install Python 3.10:<br>
@@ -43,8 +43,8 @@ To verify which version of Python 3 you have installed, open a command prompt an
 	1. [Windows] [Python & Jupyter Notebook Windows installation guide](https://medium.com/@kswalawage/install-python-and-jupyter-notebook-to-windows-10-64-bit-66db782e1d02)
 4. [PyCharm IDE](https://www.jetbrains.com/pycharm/) - PyCharm is a very popular IDE for Python from JetBrains, the same company that delivers IntelliJ IDE.
 5. Python in VS Code - VS Code is a general purpose extremely popular IDE based almost entirely on extensions & plugins: [VS Code reference](https://code.visualstudio.com/docs/languages/python) & [Real Python reference](https://realpython.com/python-development-visual-studio-code/).
-6. {Github credit: lironsoffer} [Google Colab](https://colab.research.google.com/) - online Python notebook style editor by Google. Provides access to free GPU.
-7. {Github credit: lironsoffer} [Dataspell](https://www.jetbrains.com/dataspell/) - a relatively new IDE from JetBrains which supports running notebooks cells (.ipynb files). Has features of traditional IDE as opposed to Jupyter Notebooks and JupyterLabs.
+6. (Contributed by [lironsoffer](https://github.com/lironsoffer)) [Google Colab](https://colab.research.google.com/) - online Python notebook style editor by Google. Provides access to free GPU.
+7. (Contributed by [lironsoffer](https://github.com/lironsoffer)) [Dataspell](https://www.jetbrains.com/dataspell/) - a relatively new IDE from JetBrains which supports running notebooks cells (.ipynb files). Has features of traditional IDE as opposed to Jupyter Notebooks and JupyterLabs.
 
 ## General tutorials and guides
 
@@ -53,7 +53,7 @@ To verify which version of Python 3 you have installed, open a command prompt an
 1. [W3Schools](https://www.w3schools.com/python/default.asp) - beginners
 2. [Real Python](https://realpython.com/start-here/) - intermediate, in depth, articles referencing useful open source packages
 3. [Python official docs tutorial](https://docs.python.org/3/tutorial/index.html) - exhaustive, most in depth, tutorial for must and should know built-in Python capabilities
-4. {Github credit: lironsoffer}[Automate the boring stuff](https://automatetheboringstuff.com/) - beginner-intermediate. Task oriented online book.
+4. (Contributed by [lironsoffer](https://github.com/lironsoffer)) [Automate the boring stuff](https://automatetheboringstuff.com/) - beginner-intermediate. Task oriented online book.
 5. [GeekForGeeks](https://www.geeksforgeeks.org/python-programming-language/?ref=shm) - beginner-intermediate, website with short tutorials in many subjects. Contains many examples and a "try it out" widget.
 
 _Tip:_ start from going over <u>W3Schools</u> and what it has to offer, it's basic, then for every topic you wish to learn start with some exercise from <u>Automate the boring stuff</u> and read some <u>Real Python</u> article if exists, and if needed read Python official docs; Real Python is more accessible.
@@ -131,7 +131,7 @@ DISCLAIMER: All below async references were added taking into consideration only
 	2. Packaging modules to distribute [benefit from Python Wheels](https://realpython.com/python-wheels/)
 2. <u>Descriptors</u> - reusable logic wrapping attributes access, generalizing properties which are defined using getter/setter/deleter methods: [Official docs reference](https://docs.python.org/3/howto/descriptor.html)
 3. <u>Decorators</u> - wraps method invocations with custom logic, or decorate classes for customization: [Real Python reference](https://realpython.com/primer-on-python-decorators/)
-4. {Github credit: lironsoffer} <u>Magic (Dunder) Methods</u> - special builtin methods in python. Identified by two prefix and suffix underscores in the method name, e.g. \_\_str\_\_ magic method: [Real Python reference](https://realpython.com/operator-function-overloading/) & [Official docs reference](https://docs.python.org/3/reference/datamodel.html#special-method-names)
+4. (Contributed by [lironsoffer](https://github.com/lironsoffer)) <u>Magic (Dunder) Methods</u> - special builtin methods in python. Identified by two prefix and suffix underscores in the method name, e.g. \_\_str\_\_ magic method: [Real Python reference](https://realpython.com/operator-function-overloading/) & [Official docs reference](https://docs.python.org/3/reference/datamodel.html#special-method-names)
 5. <u>Static typing</u> - Python type hints: [Real Python reference](https://realpython.com/python-type-checking/) & [Official docs reference](https://docs.python.org/3/library/typing.html)
 	1. **Union**
 	2. **Optional**
@@ -155,7 +155,7 @@ DISCLAIMER: All below async references were added taking into consideration only
 	9. [Integrates with](https://pydantic-docs.helpmanual.io/hypothesis_plugin/)[_hypothesis_](https://pydantic-docs.helpmanual.io/hypothesis_plugin/)[library](https://pydantic-docs.helpmanual.io/hypothesis_plugin/) for theory testing of data models
 	10. Code generation based on JSON schema, JSON data, YAML data, OpenAPI 3
 	\* There's an alternative 3rd party called [_attrs_](https://www.attrs.org/en/stable/), comparisons can be found online
-11. {Github credit: lironsoffer} <u>Data Manipulation</u> - some libraries are used to manipulate/transform data
+11. (Contributed by [lironsoffer](https://github.com/lironsoffer)) <u>Data Manipulation</u> - some libraries are used to manipulate/transform data
 	1. [NumPy](https://numpy.org/) **-** a Python library used for working with arrays
 	2. [Pandas](https://pandas.pydata.org/docs/user_guide/10min.html) - fast, powerful, flexible and simple data analysis & manipulation library
 	3. [Scipy](https://scipy.org/) - a scientific computation library that uses NumPy underneath
@@ -275,7 +275,7 @@ Comprehensive useful Python libraries & frameworks index: [https://github.com/vi
 
 1. Package managers:
 	1. [_Poetry_](https://python-poetry.org/) - Virtual envs package management solution similar to _npm_
-	2. {Github credit: lironsoffer} [pyenv](https://github.com/pyenv/pyenv) - Python versioning manager
+	2. (Contributed by [lironsoffer](https://github.com/lironsoffer)) [pyenv](https://github.com/pyenv/pyenv) - Python versioning manager
 
 ### Code Quality and Linting
 
