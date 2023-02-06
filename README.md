@@ -11,6 +11,7 @@ If you have any question/proposal or want to discuss this index, do not hesitate
   - **[General tutorials and guides](#general-tutorials-and-guides)**
   - **[Important Standard Library Modules](#important-standard-library-modules)**
   - **[Topics Index](#topics-index)**
+  	  * [Versioning and Environments Management](#versioning-and-environments-management)
 	  * [QoL libraries](#qol-libraries)
 	  * [Unit Testing](#unit-testing)
 	  * [Code Quality and Linting](#code-quality-and-linting)
@@ -215,6 +216,14 @@ DISCLAIMER: All below async references were added taking into consideration only
 	1. [Docker with Python in VS Code reference](https://code.visualstudio.com/docs/containers/quickstart-python)
 	2. [Real Python Docker tutorials reference](https://realpython.com/tutorials/docker/)
 
+### Versioning and Environments Management
+
+**When there's multiple Python versions / multiple virtual environments / many 3rd party packages, maintenance becomes complex and there are tools to simplify it.**
+
+1. Package managers:
+	1. Recommended tool is [_Poetry_](https://python-poetry.org/) - Virtual envs package management solution similar to _npm_
+	2. (Contributed by [lironsoffer](https://github.com/lironsoffer)) [pyenv](https://github.com/pyenv/pyenv) - Python versioning manager
+
 ### QoL libraries
 
 **For day-to-day development there are some Quality of Life libraries that can speed up development, make us more productive, spare us bugs, etc.**
@@ -270,14 +279,6 @@ Comprehensive useful Python libraries & frameworks index: [https://github.com/vi
 13. Mocking HTTP client
 	1. Mocking _aiohttp_ - [_aioresponses_](https://github.com/pnuckowski/aioresponses)
 	2. Mocking _httpx -_ [_respx_](https://lundberg.github.io/respx/)
-
-<u>Versioning & Environments Management</u>
-
-**When there's multiple Python versions / multiple virtual environments / many 3rd party packages, maintenance becomes complex and there are tools to simplify it.**
-
-1. Package managers:
-	1. [_Poetry_](https://python-poetry.org/) - Virtual envs package management solution similar to _npm_
-	2. (Contributed by [lironsoffer](https://github.com/lironsoffer)) [pyenv](https://github.com/pyenv/pyenv) - Python versioning manager
 
 ### Code Quality and Linting
 
