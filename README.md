@@ -136,11 +136,12 @@ DISCLAIMER: All below async references were added taking into consideration only
 3. <u>Decorators</u> - wraps method invocations with custom logic, or decorate classes for customization: [Real Python reference](https://realpython.com/primer-on-python-decorators/)
 4. (Contributed by [lironsoffer](https://github.com/lironsoffer)) <u>Magic (Dunder) Methods</u> - special builtin methods in python. Identified by two prefix and suffix underscores in the method name, e.g. \_\_str\_\_ magic method: [Real Python reference](https://realpython.com/operator-function-overloading/) & [Official docs reference](https://docs.python.org/3/reference/datamodel.html#special-method-names)
 5. <u>Static typing</u> - Python type hints: [Real Python reference](https://realpython.com/python-type-checking/) & [Official docs reference](https://docs.python.org/3/library/typing.html)
-	1. **Union**
-	2. **Optional**
+	1. **Union** (replacable in Python 3.10 with the '|' syntax, sometimes explicit Union is needed)
+	2. **Optional** (replacable in Python 3.10 with the '| None' syntax, sometimes explicit Optional is needed)
 	3. [**Generic**](https://mypy.readthedocs.io/en/stable/generics.html) (generic constraints, covariance, contravariance, etc.)
 	4. [**Protocol**](https://mypy.readthedocs.io/en/stable/protocols.html) (essentially define interfaces for static type check purposes, can support runtime _isinstance_ and _issubclass_ checks using a [decorator](https://docs.python.org/3/library/typing.html#typing.runtime_checkable))
-	* [_MyPy_](https://mypy.readthedocs.io/en/stable/introduction.html) is best for static type checks, and the docs are very useful to learn how to use type hints 
+	* [_MyPy_](https://mypy.readthedocs.io/en/stable/introduction.html) is a very popular tool for static type checks, and the docs are very useful to learn how to use type hints, integrable into Pycharm IDE as well as VS Code, and supports execution in CI technologies.
+	* [_Pyright_](https://github.com/microsoft/pyright) is another popular tool for static type checks, more far ahead than _Mypy_ regarding support for newest Python typing features, comes built-in with VS Code Python extension and supports execution in CI technologies, however at time of writing not supported by Pycharm.
 6. <u>Exceptions</u> - [Official docs built-in exceptions reference](https://docs.python.org/3/library/exceptions.html)
 	1. Tip: Derive from _BaseException_ instead of _Exception_ in order to implement an exception type that won't be caught by general purpose _except: Exception_ blocks. This technique is used for cancellations exceptions raised by async/await libraries; general purpose exception handling shouldn't handle cancellations.
 7. <u>Weak references</u> - reference an object such that the reference doesn't keep it alive: [Official docs reference](https://docs.python.org/3/tutorial/stdlib2.html#weak-references)
