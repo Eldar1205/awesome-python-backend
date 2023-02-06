@@ -31,14 +31,14 @@ _Tip:_ if you work on a personal PC not meant solely for development purposes yo
 	1. [Windows] [Python installation](https://www.python.org/downloads/) - for Windows make sure to have both Python and its scripts in your PATH environment variables, they'll be in your Python installation directory, example:
 	[![image](https://www.linkpicture.com/q/pythoninstall.png)](https://www.linkpicture.com/view.php?img=LPic63e011b7d882d1226923044)
 	 2. (Contributed by [m3et](https://github.com/m3et)) [Linux] If you are using Ubuntu 16.10 or newer, then you can easily install Python 3.10 with the following commands:<br>
-`$ sudo apt-get update`
+`$ sudo apt-get update` <br>
 `$ sudo apt-get install python3.10` <br>
 If you're using another version of Ubuntu (e.g. the latest LTS release) or you want to use a more current Python, we recommend to use the [deadsnakes PPA](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa) to install Python 3.10:<br>
-`$ sudo apt-get install software-properties-common`
-`$ sudo add-apt-repository ppa:deadsnakes/ppa`
+`$ sudo apt-get install software-properties-common` <br>
+`$ sudo add-apt-repository ppa:deadsnakes/ppa` <br>
 `$ sudo apt-get update`<br>
 `$ sudo apt-get install python3.10`<br>
-You can specify the exact python version if needed.<br>
+You can specify the exact python version if needed.
 To verify which version of Python 3 you have installed, open a command prompt and run:<br>
 `$ python3 --version`
 2. Understand virtual environments: [Real Python reference](https://realpython.com/python-virtual-environments-a-primer/) & [Official docs reference](https://docs.python.org/3/tutorial/venv.html)
