@@ -144,6 +144,11 @@ DISCLAIMER: All below async references were added taking into consideration only
 	* [_Pyright_](https://github.com/microsoft/pyright) is another popular tool for static type checks, more far ahead than _Mypy_ regarding support for newest Python typing features, comes built-in with VS Code Python extension and supports execution in CI technologies, however at time of writing not supported by Pycharm.
 6. <u>Exceptions</u> - [Official docs built-in exceptions reference](https://docs.python.org/3/library/exceptions.html)
 	1. Tip: Derive from _BaseException_ instead of _Exception_ in order to implement an exception type that won't be caught by general purpose _except: Exception_ blocks. This technique is used for cancellations exceptions raised by async/await libraries; general purpose exception handling shouldn't handle cancellations.
+7. ([Conributed by HomiGrotas](https://github.com/HomiGrotas)) <u>Web</u> - Interacting with web services
+	1. Requests -  The requests module allows you to send HTTP requests using Python [_Official docs reference_](https://requests.readthedocs.io/en/latest/user/quickstart/)
+	2. Selenium - Selenium Python bindings provides a simple API to write functional/acceptance tests using Selenium WebDriver [_Docs reference_](https://selenium-python.readthedocs.io/)
+	3. Beutifulsoup - Python library for pulling data out of HTML and XML files [_Official docs reference_](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+	4. Scapy - A powerful interactive packet manipulation program [_Official docs reference_](https://scapy.net/)
 7. <u>Weak references</u> - reference an object such that the reference doesn't keep it alive: [Official docs reference](https://docs.python.org/3/tutorial/stdlib2.html#weak-references)
 8. <u>Concurrency & Multithreading</u> - using a thread pool, locking, producer-consumer patterns, thread locals, async IO, async generators & comprehensions, futures, async context variables, async synchronization primitives: [Real Python Concurrency reference](https://realpython.com/python-concurrency/) & [Real Python asyncio reference](https://realpython.com/async-io-python/) & [Official docs asyncio reference](https://docs.python.org/3/library/asyncio.html)
 9. <u>Json</u> - fast library for working with JSON, supports dataclasses serialization - [_orjson_](https://github.com/ijl/orjson)
