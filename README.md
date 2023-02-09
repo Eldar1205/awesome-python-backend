@@ -144,15 +144,15 @@ DISCLAIMER: All below async references were added taking into consideration only
 	* [_Pyright_](https://github.com/microsoft/pyright) is another popular tool for static type checks, more far ahead than _Mypy_ regarding support for newest Python typing features, comes built-in with VS Code Python extension and supports execution in CI technologies, however at time of writing not supported by Pycharm.
 6. <u>Exceptions</u> - [Official docs built-in exceptions reference](https://docs.python.org/3/library/exceptions.html)
 	1. Tip: Derive from _BaseException_ instead of _Exception_ in order to implement an exception type that won't be caught by general purpose _except: Exception_ blocks. This technique is used for cancellations exceptions raised by async/await libraries; general purpose exception handling shouldn't handle cancellations.
-7. ([Conributed by HomiGrotas](https://github.com/HomiGrotas)) <u>Web</u> - Interacting with web services
-	1. Requests -  The requests module allows you to send HTTP requests using Python [_Official docs reference_](https://requests.readthedocs.io/en/latest/user/quickstart/)
-	2. Selenium - Selenium Python bindings provides a simple API to write functional/acceptance tests using Selenium WebDriver [_Docs reference_](https://selenium-python.readthedocs.io/)
-	3. Beutifulsoup - Python library for pulling data out of HTML and XML files [_Official docs reference_](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-	4. Scapy - A powerful interactive packet manipulation program [_Official docs reference_](https://scapy.net/)
-7. <u>Weak references</u> - reference an object such that the reference doesn't keep it alive: [Official docs reference](https://docs.python.org/3/tutorial/stdlib2.html#weak-references)
-8. <u>Concurrency & Multithreading</u> - using a thread pool, locking, producer-consumer patterns, thread locals, async IO, async generators & comprehensions, futures, async context variables, async synchronization primitives: [Real Python Concurrency reference](https://realpython.com/python-concurrency/) & [Real Python asyncio reference](https://realpython.com/async-io-python/) & [Official docs asyncio reference](https://docs.python.org/3/library/asyncio.html)
-9. <u>Json</u> - fast library for working with JSON, supports dataclasses serialization - [_orjson_](https://github.com/ijl/orjson)
-10. <u>Data Models</u> - represent system entities as typed data models designed for static type checks - [_pydantic_](https://pydantic-docs.helpmanual.io/):
+7.  <u>Web Scraping</u> - Using code to extract content and data from a website
+	1. Selenium - Selenium Python bindings provides a simple API to write functional and **interactive** tests using Selenium WebDriver [_Docs reference_](https://selenium-python.readthedocs.io/)
+	2. BeautifulSoup - Python library for pulling data out of HTML and XML files [_Official docs reference_](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+	3. Scrapy - A fast high-level web crawling and web scraping framework, used to crawl websites and extract structured data from their pages. It can be used for a wide range of purposes, from data mining to monitoring and automated testing. [_Official docs reference_](https://docs.scrapy.org/)
+
+8. <u>Weak references</u> - reference an object such that the reference doesn't keep it alive: [Official docs reference](https://docs.python.org/3/tutorial/stdlib2.html#weak-references)
+9. <u>Concurrency & Multithreading</u> - using a thread pool, locking, producer-consumer patterns, thread locals, async IO, async generators & comprehensions, futures, async context variables, async synchronization primitives: [Real Python Concurrency reference](https://realpython.com/python-concurrency/) & [Real Python asyncio reference](https://realpython.com/async-io-python/) & [Official docs asyncio reference](https://docs.python.org/3/library/asyncio.html)
+10. <u>Json</u> - fast library for working with JSON, supports dataclasses serialization - [_orjson_](https://github.com/ijl/orjson)
+11. <u>Data Models</u> - represent system entities as typed data models designed for static type checks - [_pydantic_](https://pydantic-docs.helpmanual.io/):
 	1. Data models validations support. including support for built-in Python types as well as additional _pydantic_ useful types mentioned in b) and c) and simple support for custom data validations for many scenarios
 	2. Provides several QoL value objects to use as fields of data models, most useful IMO: **HttpUrl**, **EmailStr**, **Json[T]**, **SecretStr** (a string hidden from logs)
 	3. Provides constrained types such that values follow some restrictions like strings/lists of certain length, most useful IMO: **constr, conint, PositiveInt, conlist, conset**
@@ -164,43 +164,44 @@ DISCLAIMER: All below async references were added taking into consideration only
 	9. [Integrates with](https://pydantic-docs.helpmanual.io/hypothesis_plugin/)[_hypothesis_](https://pydantic-docs.helpmanual.io/hypothesis_plugin/)[library](https://pydantic-docs.helpmanual.io/hypothesis_plugin/) for theory testing of data models
 	10. Code generation based on JSON schema, JSON data, YAML data, OpenAPI 3
 	\* There's an alternative 3rd party called [_attrs_](https://www.attrs.org/en/stable/), comparisons can be found online
-11. (Contributed by [lironsoffer](https://github.com/lironsoffer)) <u>Data Manipulation</u> - some libraries are used to manipulate/transform data
+12. (Contributed by [lironsoffer](https://github.com/lironsoffer)) <u>Data Manipulation</u> - some libraries are used to manipulate/transform data
 	1. [NumPy](https://numpy.org/) **-** a Python library used for working with arrays
 	2. [Pandas](https://pandas.pydata.org/docs/user_guide/10min.html) - fast, powerful, flexible and simple data analysis & manipulation library
 	3. [Scipy](https://scipy.org/) - a scientific computation library that uses NumPy underneath
-12. <u>App Settings / Configuration</u> - representation and access to application settings & configurations, e.g. connection strings, services URLs, anything that shouldn't be hard coded and should be accessible to system code in a configurable manner.
+13. <u>App Settings / Configuration</u> - representation and access to application settings & configurations, e.g. connection strings, services URLs, anything that shouldn't be hard coded and should be accessible to system code in a configurable manner.
 	1. Extensive support using [_dynaconf_](https://www.dynaconf.com/) supporting multi-environment, many formats, external config stores (e.g. Redis), unit tests and more
 	2. Basic support from [_pydantic_](https://pydantic-docs.helpmanual.io/usage/settings/) library above, can be extended to support [multi-environment](https://rednafi.github.io/digressions/python/2020/06/03/python-configs.html) and custom loaders can make it leverage _dynaconf_
-13. <u>File System</u>
+14. <u>File System</u>
 	1. file system access using async IO - [_aiofiles_](https://pythonrepo.com/repo/Tinche-aiofiles-python-files)
 	2. Path object: [Real Python reference](https://realpython.com/python-pathlib/)
-14. <u>Http Client</u> - sending HTTP requests using async IO, popular alternatives:
+15. <u>Http Client</u> - sending HTTP requests using async IO, popular alternatives:
 	1. [_httpx_](https://www.python-httpx.org/)
 		1. Supports: HTTP/2, client certificate, full request & response hooks, env variables config, [OAuth2 extension](https://colin-b.github.io/httpx_auth/)
 		2. Doesn't support: websockets
 	2. [_aiohttp_](https://docs.aiohttp.org/en/stable/)
 		1. Supports: web sockets, client certificate, partial request & response hooks (allowed modifications: requests headers, enables Authentication flows), OAuth2 ([via another package](https://docs.authlib.org/en/v0.12.1/client/aiohttp.html))
 		2. Doesn't support: HTTP/2, env variables config
-	* Recommended _httpx_ for richer feature set, for web sockets client use [_websockets_](https://websockets.readthedocs.io/en/stable/) 
-15. <u>SQL ORM</u> - object relational mapper for working with SQL databases - [_SQLAlchemy_](https://www.sqlalchemy.org/)
+	* Recommended _httpx_ for richer feature set, for web sockets client use [_websockets_](https://websockets.readthedocs.io/en/stable/)
+	3. ([Contributed by HomiGrotas](https://github.com/HomiGrotas)) Requests -  The requests module allows you to send HTTP requests using Python [_Official docs reference_](https://requests.readthedocs.io/en/latest/user/quickstart/)<br>***Note: The requests module is synchronous module and therefore it's not recommended for production code expected to be scalable, but can be useful for other scenarios.** 
+16. <u>SQL ORM</u> - object relational mapper for working with SQL databases - [_SQLAlchemy_](https://www.sqlalchemy.org/)
 	1. [Integrates with](https://docs.sqlalchemy.org/en/14/orm/extensions/mypy.html)[_MyPy_](https://docs.sqlalchemy.org/en/14/orm/extensions/mypy.html) for type checking _SQLAlchemy_ models
 	2. [Integrates with](https://pydantic-docs.helpmanual.io/usage/models/#orm-mode-aka-arbitrary-class-instances)[_pydantic_](https://pydantic-docs.helpmanual.io/usage/models/#orm-mode-aka-arbitrary-class-instances) to map _SQLAlchemy_ models to/from _pydantic_ models
 	3. [Integrates with](https://fastapi.tiangolo.com/tutorial/sql-databases/)[_FastAPI_](https://fastapi.tiangolo.com/tutorial/sql-databases/) to expose CRUD API on top of SQL databases
 	4. [Integrates with](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)[_Flask_](https://flask-sqlalchemy.palletsprojects.com/en/2.x/) to expose CRUD API on top of SQL databases
 	5. _Django_ has a built-in ORM, so no _SQLAlchemy_ integration
-16. <u>Fault tolerance</u> - I/O can fail, e.g. services can return HTTP error responses, SQL queries/commands can fail. There are known ways to handle failures:
+17. <u>Fault tolerance</u> - I/O can fail, e.g. services can return HTTP error responses, SQL queries/commands can fail. There are known ways to handle failures:
 	1. <u>Retry policies</u> - retrying failed API requests, SQL queries/commands, etc. based on some retry policy - [_tenacity_](https://tenacity.readthedocs.io/en/latest/), type hints support [incomplete](https://github.com/jd/tenacity/issues/230). There's also [_aioretry_](https://github.com/kaelzhang/python-aioretry) which requires implementing the retry policy yourself but supports type hints.
 	2. <u>Circuit Breaker</u> - block execution of logic if it failed too many times recently, e.g. if SQL queries started failing due to overload on the SQL database, don't submit new queries for a while and let the database recover - [_pybreaker_](https://github.com/danielfm/pybreaker)
-17. <u>Binary Serialization</u> - [_MessagePack_](https://msgpack.org/) is a very efficient general purpose format - [_msgpack_](https://github.com/msgpack/msgpack-python)
-18. <u>Logging</u> - logging capabilities for Python: [Real Python reference](https://realpython.com/python-logging/)
+18. <u>Binary Serialization</u> - [_MessagePack_](https://msgpack.org/) is a very efficient general purpose format - [_msgpack_](https://github.com/msgpack/msgpack-python)
+19. <u>Logging</u> - logging capabilities for Python: [Real Python reference](https://realpython.com/python-logging/)
 	1. Logging setup helper library - [_daiquiri_](https://daiquiri.readthedocs.io/en/latest/)
 	2. Structured logging - emit logs as messages + key-value pairs - [_structlog_](https://www.structlog.org/en/stable/why.html)
-19. <u>DI Container</u> - enable DI design principle with auto-wiring of dependencies - [_lagom_](https://lagom-di.readthedocs.io/en/latest/)
+20. <u>DI Container</u> - enable DI design principle with auto-wiring of dependencies - [_lagom_](https://lagom-di.readthedocs.io/en/latest/)
 	1. Built-in integration with FastAPI & Flask, including per-request injectables
 	2. There's also [_rodi_](https://github.com/Neoteroi/rodi) which is inspired by .Net built-in DI container, less features and less Github activity (commits/contributors/etc.) but simpler to use
-20. <u>CLI</u> - create applications with command-line interface - [_typer_](https://typer.tiangolo.com/)
+21. <u>CLI</u> - create applications with command-line interface - [_typer_](https://typer.tiangolo.com/)
 	1. Async main/command tip below "Sync to Async decorator"
-21. <u>Web frameworks</u> - build web services/applications that either provide HTML pages/components via Server Side Rendering (SSR) and templating, or RESTful HTTP APIs, or both. There are some popular alternatives, _FastAPI_ is the recommended one:
+22. <u>Web frameworks</u> - build web services/applications that either provide HTML pages/components via Server Side Rendering (SSR) and templating, or RESTful HTTP APIs, or both. There are some popular alternatives, _FastAPI_ is the recommended one:
 	1. [_FastAPI_](https://fastapi.tiangolo.com/) - modern, specialized for type hints, supports explicit async IO and auto-generates Swagger UI (API spec)
 	2. [_Flask_](https://flask.palletsprojects.com/en/2.0.x/) - exists since 2010, no explicit async IO support
 	3. [_Django_](https://www.djangoproject.com/) - a very extensive framework with many many features, essentially an ecosystem, well documented, [limited explicit async IO support](https://docs.djangoproject.com/en/3.2/topics/async/)
