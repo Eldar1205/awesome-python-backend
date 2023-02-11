@@ -1,5 +1,20 @@
 {
   "projectName": "awesome-python-backend",
   "projectOwner": "Eldar1205",
-  "contributors": []
+  "contributors": [
+    {
+      "login": "lironsoffer",
+      "name": "Liron Soffer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18441236?v=4",
+      "profile": "https://github.com/lironsoffer",
+      "contributions": [
+        "content"
+      ]
+    }
+  ],
+  "files": [
+    "README.md"
+  ],
+  "commitConvention": "angular",
+  "contributorsPerLine": 7
 }
