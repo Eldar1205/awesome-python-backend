@@ -19,6 +19,7 @@ If you have any question/proposal or want to discuss this index, do not hesitate
 	  * [Documentation](#documentation)
 	  * [Distributed Programming Frameworks](#distributed-programming-frameworks)
   - **[Contribution](#contribution)**
+  - **[Contributors](#contributors)**
 <br>
 
 ## Environment setup and installations
