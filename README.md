@@ -11,8 +11,9 @@ If you have any question/proposal or want to discuss this index, do not hesitate
   - **[General tutorials and guides](#general-tutorials-and-guides)**
   - **[Important Standard Library Modules](#important-standard-library-modules)**
   - **[Topics Index](#topics-index)**
+  	  * [Commonly Useful Knowledge](#commonly-useful-knowledge)
   	  * [Versioning and Environments Management](#versioning-and-environments-management)
-	  * [QoL libraries](#qol-libraries)
+	  * [QoL Libraries](#qol-libraries)
 	  * [Unit Testing](#unit-testing)
 	  * [Code Quality and Linting](#code-quality-and-linting)
 	  * [Tips and Tricks](#tips-and-tricks)
@@ -130,6 +131,8 @@ Python official module docs: [https://docs.python.org/3/py-modindex.html](https:
 
 DISCLAIMER: All below async references were added taking into consideration only the _asyncio_ built-in module. I'm currently looking into _trio_ and _AnyIO_ as alternatives.
 
+### Commonly Useful Knowledge
+
 1. <u>Packages & Modules</u> - split Python code into multiple files & packaging reusable Python code into a single package: [Real Python reference](https://realpython.com/python-import/) & [Official docs reference](https://docs.python.org/3/tutorial/modules.html)
 	1. Example _asyncio_ module source code, look at [\_\_init\_\_.py](https://github.com/python/cpython/tree/3.9/Lib/asyncio)
 	2. Packaging modules to distribute [benefit from Python Wheels](https://realpython.com/python-wheels/)
@@ -226,7 +229,7 @@ DISCLAIMER: All below async references were added taking into consideration only
 	1. Recommended tool is [_Poetry_](https://python-poetry.org/) - Virtual envs package management solution similar to _npm_
 	2. [pyenv](https://github.com/pyenv/pyenv) - Python versioning manager
 
-### QoL libraries
+### QoL Libraries
 
 **For day-to-day development there are some Quality of Life libraries that can speed up development, make us more productive, spare us bugs, etc.**
 
