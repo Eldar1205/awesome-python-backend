@@ -57,7 +57,7 @@ To verify which version of Python 3 you have installed, open a command prompt an
 1. [W3Schools](https://www.w3schools.com/python/default.asp) - beginners
 2. [Real Python](https://realpython.com/start-here/) - intermediate, in depth, articles referencing useful open source packages
 3. [Python official docs tutorial](https://docs.python.org/3/tutorial/index.html) - exhaustive, most in depth, tutorial for must and should know built-in Python capabilities
-4. (Contributed by [lironsoffer](https://github.com/lironsoffer)) [Automate the boring stuff](https://automatetheboringstuff.com/) - beginner-intermediate. Task oriented online book.
+4. [Automate the boring stuff](https://automatetheboringstuff.com/) - beginner-intermediate. Task oriented online book.
 5. [GeekForGeeks](https://www.geeksforgeeks.org/python-programming-language/?ref=shm) - beginner-intermediate, website with short tutorials in many subjects. Contains many examples and a "try it out" widget.
 
 _Tip:_ start from going over <u>W3Schools</u> and what it has to offer, it's basic, then for every topic you wish to learn start with some exercise from <u>Automate the boring stuff</u> and read some <u>Real Python</u> article if exists, and if needed read Python official docs; Real Python is more accessible.
