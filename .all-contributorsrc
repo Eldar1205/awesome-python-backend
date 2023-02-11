@@ -1,5 +1,20 @@
 {
   "projectName": "awesome-python-backend",
   "projectOwner": "Eldar1205",
-  "contributors": []
+  "contributors": [
+    {
+      "login": "m3et",
+      "name": "Raphael",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50811873?v=4",
+      "profile": "https://m3et.github.io/PersonalWebsite/",
+      "contributions": [
+        "content"
+      ]
+    }
+  ],
+  "files": [
+    "README.md"
+  ],
+  "commitConvention": "angular",
+  "contributorsPerLine": 7
 }
