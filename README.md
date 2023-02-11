@@ -411,3 +411,15 @@ Features:
 Your contributions and proposals are always welcome! Please refer to the [contribution guidelines](CONTRIBUTING.md) first.
 
 I may keep some pull requests open until I look into the references myself, you could [vote for them](https://github.com/Eldar1205/awesome-python-backend/pulls) by adding :+1: to them.
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
