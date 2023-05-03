@@ -426,6 +426,7 @@ I may keep some pull requests open until I look into the references myself, you 
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://m3et.github.io/PersonalWebsite/"><img src="https://avatars.githubusercontent.com/u/50811873?v=4?s=100" width="100px;" alt="Raphael"/><br /><sub><b>Raphael</b></sub></a><br /><a href="#content-m3et" title="Content">🖋</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/lironsoffer"><img src="https://avatars.githubusercontent.com/u/18441236?v=4?s=100" width="100px;" alt="Liron Soffer"/><br /><sub><b>Liron Soffer</b></sub></a><br /><a href="#content-lironsoffer" title="Content">🖋</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/YaelD"><img src="https://avatars.githubusercontent.com/u/63968945?v=4?s=100" width="100px;" alt="Yael Davidov"/><br /><sub><b>Yael Davidov</b></sub></a><br /><a href="#content-YaelD" title="Content">🖋</a></td>
     </tr>
   </tbody>
 </table>
